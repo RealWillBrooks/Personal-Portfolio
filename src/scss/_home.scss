@@ -37,22 +37,59 @@
         width: 65%;
         background: white;
         height: 100%;
-        padding: 0 0 0 25%;
-        .user-img{
-            width: 400px;
-            height: 500px;
-            background: url(../img/bg.jpg) no-repeat center center; 
+        // padding: 0 0 0 25%;
+        
+        .img-container{
+            width: 30%;
+            display: inline-block;
+            position: relative;
+            height: 100%;
+
+            .user-img{
+            position: absolute;
+            top: 56px;
+            left: -250px;
+            width: 500px;
+            height: calc(100% - 112px);
+            background: url(../img/willyb.jpg) 
+            no-repeat center center; 
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
             
         }
+        }
+        
 
         .profile-section{
+            vertical-align: top;
+            display: inline-block;
+            padding: 20% 0 0 0;
+            max-width: 500px;
             
             .profile{
+                h1{
+                    font-size: 2.3rem;
+                    font-weight: 500;
+                    line-height: 1.2;
+                    margin: 0 0 1rem 0;
+                    span{
+                        color: $color2;
+                    }
+                }
 
+                h5{
+                    font-size: 1.1rem;
+                    margin: 0 0 2rem;
+                }
+                p{
+                    color: $color1;
+                    font-weight: 300;
+                    line-height: 1.4;
+                    margin: 0 0 2rem;
+
+                }
             }
         }
     }
