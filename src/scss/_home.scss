@@ -1,0 +1,46 @@
+.home {
+
+    .logo{
+        background: white;
+        height: 100px;
+        width: 200px;
+    }
+    .info-section{
+        width: 35%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        padding: 54px;
+
+        .info-box{
+            bottom: 60px;
+            position: absolute;
+            h4{
+                font-size: 1.2rem;
+                color: $color3;
+                margin: .7rem 0;
+            }
+
+            p{
+                font-size: 0.9rem;
+                font-weight: 300;
+                color: $color3;
+                margin: .2rem 0 1.6rem;
+
+            }
+        }
+    }
+
+    .content-area{
+        margin-left: 35%;
+        width: 65%;
+        background: white;
+        height: 100%;
+        padding: 0 0 0 25%;
+
+        .profile-section{
+            
+        }
+    }
+}
