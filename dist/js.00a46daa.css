@@ -76,6 +76,14 @@ table {
   background: white;
   height: 100%;
   padding: 0 0 0 25%; }
+  .home .content-area .user-img {
+    width: 400px;
+    height: 500px;
+    background: url(/bg.c04a5f46.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
 
 * {
   box-sizing: border-box; }

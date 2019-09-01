@@ -38,9 +38,22 @@
         background: white;
         height: 100%;
         padding: 0 0 0 25%;
+        .user-img{
+            width: 400px;
+            height: 500px;
+            background: url(../img/bg.jpg) no-repeat center center; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            
+        }
 
         .profile-section{
             
+            .profile{
+
+            }
         }
     }
 }
