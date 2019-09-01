@@ -1,9 +1,19 @@
 .home {
 
     .logo{
-        background: white;
-        height: 100px;
-        width: 200px;
+        border: 5px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        color: #fefe;
+        line-height: 0;
+        height: 130px;
+        width: 150px;
+        &:hover{
+            border: 5px solid $color2;
+            color: $color2;
+        }
     }
     .info-section{
         width: 35%;
@@ -36,6 +46,10 @@
             text-decoration: none;
             font-size: 2rem;
             padding: 0 10px;
+            &:hover{
+                color: $color2;
+
+            }
             &:first-child{
                 padding: 0 10px 0 0;
             }
@@ -68,7 +82,9 @@
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            
+            -webkit-box-shadow: 9px 20px 74px 6px rgba(180, 180, 180, 0.34);
+            -moz-box-shadow: 9px 20px 74px 6px rgba(180, 180, 180, 0.34);
+            box-shadow: 9px 20px 74px 6px rgba(180, 180, 180, 0.34);
         }
         }
         
