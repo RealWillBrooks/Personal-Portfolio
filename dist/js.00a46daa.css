@@ -46,9 +46,18 @@ table {
   border-spacing: 0; }
 
 .home .logo {
-  background: white;
-  height: 100px;
-  width: 200px; }
+  border: 5px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: #fefe;
+  line-height: 0;
+  height: 130px;
+  width: 150px; }
+  .home .logo:hover {
+    border: 5px solid #41FF74;
+    color: #41FF74; }
 
 .home .info-section {
   width: 35%;
@@ -74,6 +83,8 @@ table {
     text-decoration: none;
     font-size: 2rem;
     padding: 0 10px; }
+    .home .info-section .icon-section a:hover {
+      color: #41FF74; }
     .home .info-section .icon-section a:first-child {
       padding: 0 10px 0 0; }
 
@@ -97,7 +108,10 @@ table {
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
-      background-size: cover; }
+      background-size: cover;
+      -webkit-box-shadow: 9px 20px 74px 6px rgba(180, 180, 180, 0.34);
+      -moz-box-shadow: 9px 20px 74px 6px rgba(180, 180, 180, 0.34);
+      box-shadow: 9px 20px 74px 6px rgba(180, 180, 180, 0.34); }
   .home .content-area .profile-section {
     vertical-align: top;
     display: inline-block;
@@ -129,16 +143,18 @@ html {
   font-family: 'Barlow Semi Condensed', sans-serif;
   height: 100%; }
 
-.hamburger-icon {
+.menu-icon {
   position: fixed;
   right: 36px;
   top: 36px;
-  padding: 20px; }
-  .hamburger-icon .fas {
+  padding: 20px;
+  z-index: 11; }
+  .menu-icon .fas {
     font-size: 2rem;
     color: #41FF74; }
 
 .primarybtn {
+  text-decoration: none;
   background: #41FF74;
   border-radius: 30px;
   text-align: center;
@@ -148,9 +164,15 @@ html {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 500;
-  margin-right: 15px; }
+  margin-right: 15px;
+  transition: all 0.3s ease-in-out; }
+  .primarybtn:hover {
+    cursor: pointer;
+    background: #202020;
+    color: #bdbdbd; }
 
 .ghostbtn {
+  text-decoration: none;
   border: 4px solid #202020;
   border-radius: 30px;
   text-align: center;
@@ -159,7 +181,47 @@ html {
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-weight: 500; }
+  font-weight: 500;
+  transition: all 0.3s ease-in-out; }
+  .ghostbtn:hover {
+    cursor: pointer;
+    border: 4px solid #41FF74;
+    color: #41FF74; }
+
+#menu {
+  background: #202020;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  transform: translate3d(-100%, 0, 0);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: all .5s ease-in-out; }
+  #menu nav {
+    width: 400px;
+    text-align: center; }
+    #menu nav a {
+      display: block;
+      font-size: 2.3rem;
+      padding: 1rem;
+      text-decoration: none;
+      color: #fefe; }
+      #menu nav a:hover {
+        color: #41FF74; }
+
+.menu-active .menu-icon .fa {
+  color: #fefe; }
+
+.menu-active #menu {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  transform: translate3d(200%, 0, 0); }
 
 
 /*# sourceMappingURL=/js.00a46daa.css.map */
