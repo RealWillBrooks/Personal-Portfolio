@@ -14,3 +14,27 @@ html {
     height: 100%;
 
 }
+
+.primarybtn{
+    background: $color2;
+    border-radius: 30px;
+    text-align: center;
+    color: $color1;
+    padding: 15px 30px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+.ghostbtn{
+    border: 4px solid $color1;
+    border-radius: 30px;
+    text-align: center;
+    color: $color1;
+    padding: 12px 27px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
