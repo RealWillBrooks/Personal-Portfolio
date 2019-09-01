@@ -1,0 +1,58 @@
+
+    .logo{
+        text-transform: uppercase;
+        border: 5px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        color: #fefe;
+        line-height: 0;
+        height: 130px;
+        width: 150px;
+        &:hover{
+            border: 5px solid $color2;
+            color: $color2;
+        }
+    }
+    .info-section{
+        width: 35%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        padding: 54px;
+
+        .info-box{
+            bottom: 60px;
+            position: absolute;
+            h4{
+                font-size: 1.2rem;
+                color: $color3;
+                margin: .7rem 0;
+            }
+
+            p{
+                font-size: 0.9rem;
+                font-weight: 300;
+                color: $color3;
+                margin: .2rem 0 1.6rem;
+
+            }
+        }
+        .icon-section{
+            a{
+            color: #fefe;
+            text-decoration: none;
+            font-size: 2rem;
+            padding: 0 10px;
+            &:hover{
+                color: $color2;
+
+            }
+            &:first-child{
+                padding: 0 10px 0 0;
+            }
+            }
+        }
+    }
