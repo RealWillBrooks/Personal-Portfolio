@@ -113,3 +113,10 @@ html {
         transform: translate3d(200%,0,0)
     }
 }
+
+.scroll-section{
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-y: hidden;
+    padding: 56px;
+}

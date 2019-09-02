@@ -103,7 +103,7 @@ table {
   min-width: 300px;
   background: white;
   height: 100%;
-  padding: 56px; }
+  overflow: hidden; }
   .resume .content-area h1 {
     font-weight: 700;
     text-transform: uppercase;
@@ -265,6 +265,12 @@ html {
   top: 0;
   bottom: 0;
   transform: translate3d(200%, 0, 0); }
+
+.scroll-section {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-y: hidden;
+  padding: 56px; }
 
 
 /*# sourceMappingURL=/js.00a46daa.css.map */
