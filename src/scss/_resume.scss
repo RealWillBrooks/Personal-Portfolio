@@ -10,7 +10,8 @@
         min-width: 300px;
         background: white;
         height: 100%;
-        padding: 56px;
+        overflow: hidden;
+
         h1{
             font-weight: 700;
             text-transform: uppercase;
@@ -26,6 +27,7 @@
             grid-column-gap: 56px;
             grid-row-gap: 30px;
             max-width: 1000px;
+            
             .ed-box{
                 padding: 30px;
                 transition: all 0.5s ease-in-out;
