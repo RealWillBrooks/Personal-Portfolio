@@ -179,43 +179,58 @@ table {
     .info-section .icon-section a:first-child {
       padding: 0 10px 0 0; }
 
-.porfolio .info-section {
+.work .info-section {
   width: 20%; }
 
-.porfolio .content-area {
+.work .content-area {
   margin-left: 20%;
   width: 80%;
   min-width: 300px;
   background: white;
   height: 100%;
   overflow: hidden; }
-  .porfolio .content-area .category {
+  .work .content-area .work-section {
     margin-bottom: 56px; }
-    .porfolio .content-area .category h1 {
+    .work .content-area .work-section h1 {
       font-weight: 700;
       text-transform: uppercase;
       font-size: 2.3rem;
       margin-bottom: 56px; }
-    .porfolio .content-area .category .ed-section {
+    .work .content-area .work-section .project-section {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 56px;
-      grid-row-gap: 30px;
-      max-width: 1000px; }
-      .porfolio .content-area .category .ed-section .ed-box {
+      grid-template-columns: 1fr 1fr; }
+      .work .content-area .work-section .project-section .project-box {
+        position: relative;
         padding: 30px;
-        transition: all 0.5s ease-in-out; }
-        .porfolio .content-area .category .ed-section .ed-box:hover {
+        transition: all 0.5s ease-in-out;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 400px;
+        width: 800px; }
+        .work .content-area .work-section .project-section .project-box:hover {
           -webkit-box-shadow: 0px 20px 60px 6px rgba(0, 0, 0, 0.15);
           -moz-box-shadow: 0px 20px 60px 6px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 20px 60px 6px rgba(0, 0, 0, 0.15);
           cursor: pointer; }
-        .porfolio .content-area .category .ed-section .ed-box h5 {
+        .work .content-area .work-section .project-section .project-box .grey-bg {
+          background: #efefef;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          opacity: 0;
+          transition: all .3s ease-in-out; }
+          .work .content-area .work-section .project-section .project-box .grey-bg:hover {
+            opacity: 0.65; }
+        .work .content-area .work-section .project-section .project-box h5 {
           font-weight: 500;
           text-transform: uppercase;
           font-size: 1.3rem;
           padding-bottom: 10px; }
-        .porfolio .content-area .category .ed-section .ed-box p {
+        .work .content-area .work-section .project-section .project-box p {
           font-weight: 300;
           font-size: 1rem;
           margin-bottom: 1rem; }
@@ -227,7 +242,7 @@ body,
 html {
   font-size: 18px;
   background: #202020;
-  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-family: 'Roboto', sans-serif;
   height: 100%; }
 
 .menu-icon {

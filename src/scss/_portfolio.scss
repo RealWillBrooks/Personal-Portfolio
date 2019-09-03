@@ -1,4 +1,4 @@
-.porfolio {
+.work {
     .info-section{
         width: 20%;
     }
@@ -12,7 +12,7 @@
         height: 100%;
         overflow: hidden;
 
-        .category{
+        .work-section{
             margin-bottom: 56px;
 
             h1{
@@ -24,21 +24,42 @@
     
            
     
-            .ed-section{
+            .project-section{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                grid-column-gap: 56px;
-                grid-row-gap: 30px;
-                max-width: 1000px;
+            
                 
-                .ed-box{
+                .project-box{
+                    position: relative;
                     padding: 30px;
                     transition: all 0.5s ease-in-out;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+                    height: 400px;
+                    width: 800px;
+
+
                     &:hover{
                     -webkit-box-shadow: 0px 20px 60px 6px rgba(0, 0, 0, 0.15);
                     -moz-box-shadow: 0px 20px 60px 6px rgba(0, 0, 0, 0.15);
                     box-shadow: 0px 20px 60px 6px rgba(0, 0, 0, 0.15);
                     cursor: pointer;
+                    }
+
+                    .grey-bg{
+                        background: $color6;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        opacity: 0;
+                        transition: all .3s ease-in-out;
+                        &:hover{
+                            opacity: 0.65;
+                        }
                     }
                     
                     h5{
