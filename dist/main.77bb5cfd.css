@@ -196,26 +196,41 @@ table {
       text-transform: uppercase;
       font-size: 2.3rem;
       margin-bottom: 56px; }
-    .work .content-area .work-section .ed-section {
+    .work .content-area .work-section .project-section {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 56px;
-      grid-row-gap: 30px;
-      max-width: 1000px; }
-      .work .content-area .work-section .ed-section .ed-box {
+      grid-template-columns: 1fr 1fr; }
+      .work .content-area .work-section .project-section .project-box {
+        position: relative;
         padding: 30px;
-        transition: all 0.5s ease-in-out; }
-        .work .content-area .work-section .ed-section .ed-box:hover {
+        transition: all 0.5s ease-in-out;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 400px;
+        width: 800px; }
+        .work .content-area .work-section .project-section .project-box:hover {
           -webkit-box-shadow: 0px 20px 60px 6px rgba(0, 0, 0, 0.15);
           -moz-box-shadow: 0px 20px 60px 6px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 20px 60px 6px rgba(0, 0, 0, 0.15);
           cursor: pointer; }
-        .work .content-area .work-section .ed-section .ed-box h5 {
+        .work .content-area .work-section .project-section .project-box .grey-bg {
+          background: #efefef;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          opacity: 0;
+          transition: all .3s ease-in-out; }
+          .work .content-area .work-section .project-section .project-box .grey-bg:hover {
+            opacity: 0.65; }
+        .work .content-area .work-section .project-section .project-box h5 {
           font-weight: 500;
           text-transform: uppercase;
           font-size: 1.3rem;
           padding-bottom: 10px; }
-        .work .content-area .work-section .ed-section .ed-box p {
+        .work .content-area .work-section .project-section .project-box p {
           font-weight: 300;
           font-size: 1rem;
           margin-bottom: 1rem; }
