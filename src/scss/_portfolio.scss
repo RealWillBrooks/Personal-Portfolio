@@ -38,7 +38,6 @@
                     -o-background-size: cover;
                     background-size: cover;
                     height: 400px;
-                    width: 800px;
 
 
                     &:hover{
@@ -56,9 +55,49 @@
                         right: 0;
                         left: 0;
                         opacity: 0;
-                        transition: all .3s ease-in-out;
+                        transition: all 0.3s ease-in-out;
+                        overflow: hidden;
+
+
                         &:hover{
-                            opacity: 0.65;
+                            opacity: 0.85;
+
+                            .project-info{
+                                .project-details{
+                                    transform: translate3d(0, 0, 0);
+                                }
+                            }
+                        }
+
+                        .project-info{
+                        padding: 56px;
+                        position: absolute;
+                        width: 100%;
+                        bottom: 0;
+
+                        .project-details{
+                            position: relative;
+                            font-size: 1.1rem;
+                            text-transform: capitalize;
+                            font-weight: 300;
+                            margin: 0 0 1rem;
+                            transform: translate3d(-200, 0, 0);
+                            transition: transform 0.3s ease-in-out 0.2s;
+                        }
+
+                        .project-title{
+                            font-size: 1.8rem;
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            transition: transform 0.3s ease-in-out 0.2s;
+
+                        }
+                        .fa-long-arrow-right{
+                            position: absolute;
+                            bottom: 56px;
+                            right: 56px;
+                            font-size: 3rem;
+                        }
                         }
                     }
                     
