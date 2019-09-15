@@ -1,4 +1,4 @@
-.home {
+.contact {
     .info-section{
         width: 35%;
         padding: 54px;
@@ -17,14 +17,15 @@
             position: relative;
             height: 100%;
 
-            .user-img{
+            .form-section{
             position: absolute;
+            padding: 46px;
             top: 56px;
             left: -250px;
             width: 500px;
             height: calc(100% - 112px);
-            background: url(../img/willyb.jpg) 
-            no-repeat center center; 
+            background: $color1;
+            color: $color4;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -32,11 +33,46 @@
             -webkit-box-shadow: 9px 20px 74px 6px rgba(180, 180, 180, 0.34);
             -moz-box-shadow: 9px 20px 74px 6px rgba(180, 180, 180, 0.34);
             box-shadow: 9px 20px 74px 6px rgba(180, 180, 180, 0.34);
+
+            h4{
+                font-size: 1.3rem;
+                color: white;
+                margin-bottom: 4rem;
+                margin-top: 2rem;
+            }
+
+            input[type="text"],input[type="email"], textarea {
+                background: transparent;
+                border: none;
+                border-bottom: 2px solid $color4;
+                width: 100%;
+                margin-bottom: 2rem;
+                font-size: 0.8rem;
+                text-transform: uppercase;
+                line-height: 1.2;
+                color: $color5;
+                padding: 15px 0;
+            }
+            button[type="submit"]{
+                background: $color2;
+                border: none;
+                -webkit-border-radius: 30px;
+                -moz-border-radius: 30px;
+                border-radius: 30px;
+                text-align: center;
+                padding: 17px 30px;
+                font-size: 1.1rem;
+                color: white;
+                text-transform: uppercase;
+                width: 100%;
+                
+            }
+            
         }
         }
         
 
-        .profile-section{
+        .contact-section{
             vertical-align: top;
             display: inline-block;
             padding: 20% 0 0 0;

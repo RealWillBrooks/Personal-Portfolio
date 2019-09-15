@@ -260,27 +260,29 @@ table {
           font-size: 1rem;
           margin-bottom: 1rem; }
 
-.home .info-section {
+.contact .info-section {
   width: 35%;
   padding: 54px; }
 
-.home .content-area {
+.contact .content-area {
   margin-left: 35%;
   width: 65%;
   background: white;
   height: 100%; }
-  .home .content-area .img-container {
+  .contact .content-area .img-container {
     width: 30%;
     display: inline-block;
     position: relative;
     height: 100%; }
-    .home .content-area .img-container .user-img {
+    .contact .content-area .img-container .form-section {
       position: absolute;
+      padding: 46px;
       top: 56px;
       left: -250px;
       width: 500px;
       height: calc(100% - 112px);
-      background: url(/willyb.5dcc1d64.jpg) no-repeat center center;
+      background: #202020;
+      color: #a9a9a9;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -288,22 +290,50 @@ table {
       -webkit-box-shadow: 9px 20px 74px 6px rgba(180, 180, 180, 0.34);
       -moz-box-shadow: 9px 20px 74px 6px rgba(180, 180, 180, 0.34);
       box-shadow: 9px 20px 74px 6px rgba(180, 180, 180, 0.34); }
-  .home .content-area .profile-section {
+      .contact .content-area .img-container .form-section h4 {
+        font-size: 1.3rem;
+        color: white;
+        margin-bottom: 4rem;
+        margin-top: 2rem; }
+      .contact .content-area .img-container .form-section input[type="text"], .contact .content-area .img-container .form-section input[type="email"], .contact .content-area .img-container .form-section textarea {
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid #a9a9a9;
+        width: 100%;
+        margin-bottom: 2rem;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        line-height: 1.2;
+        color: #bdbdbd;
+        padding: 15px 0; }
+      .contact .content-area .img-container .form-section button[type="submit"] {
+        background: #41FF74;
+        border: none;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+        text-align: center;
+        padding: 17px 30px;
+        font-size: 1.1rem;
+        color: white;
+        text-transform: uppercase;
+        width: 100%; }
+  .contact .content-area .contact-section {
     vertical-align: top;
     display: inline-block;
     padding: 20% 0 0 0;
     max-width: 500px; }
-    .home .content-area .profile-section .profile h1 {
+    .contact .content-area .contact-section .profile h1 {
       font-size: 2.3rem;
       font-weight: 500;
       line-height: 1.2;
       margin: 0 0 1rem 0; }
-      .home .content-area .profile-section .profile h1 span {
+      .contact .content-area .contact-section .profile h1 span {
         color: #41FF74; }
-    .home .content-area .profile-section .profile h5 {
+    .contact .content-area .contact-section .profile h5 {
       font-size: 1.1rem;
       margin: 0 0 2rem; }
-    .home .content-area .profile-section .profile p {
+    .contact .content-area .contact-section .profile p {
       color: #202020;
       font-weight: 300;
       line-height: 1.4;
