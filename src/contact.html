@@ -8,19 +8,15 @@
     
         <body class="home">
             <div class="menu-icon">
-                
                     <i class="fas fa-bars"></i>
-
-
-
-
             </div>
 
             <section id="menu">
                 <nav>
                     <a href="./index.html">Home</a>
-                    <a href="./portfolio.html">Portfolio</a>
-                    <a href="./contact.html">Contact</a>
+                    <a href="#">About</a>
+                    <a href="http://www.github.com/realwillbrooks">Portfolio</a>
+                    <a href="#">Contact</a>
                 </nav>
             </section>
             <section class="info-section">
@@ -47,18 +43,35 @@
 
             <section class="content-area">
                 <div class="img-container">
-                    <div class="user-img"></div>
+                    <div class="user-img">
+
+                        <form action="/" method="POST">
+
+                        <input type="text" name="name" required>
+                        <input type="email" name="email" required>
+                        <input type="text" name="budget">
+                        <textarea name="message" rows="8" cols="63" required> </textarea>
+
+                        <button type="submit">Send Message</button>
+                    
+                        </form>
+
+                    </div>
                 </div>
-                <div class="profile-section">
-                <div class="profile">
-                    <h1>William <br>
-                         <span>Brooks</span></h1>
-                         <h5>Full-Stack Developer</h5>
-                         <p>Creative Designer & Software Developer
-                             from Chicago, IL. Welcome to my Site!
-                         </p>
-                         <a href="http://www.github.com/realwillbrooks"class="primarybtn">Portfolio</a>
-                         <a href="./resume.html"class="ghostbtn">Resume</a>
+                <div class="contact-section">
+                    <div class="profile">
+                        <div class="contact-box">
+                            <h5>Phone</h5>
+                            <p>(312) 783-2295</p>
+                        </div>
+                        <div class="contact-box">
+                            <h5>Email</h5>
+                            <p>WBrooks107@gmail.com</p>
+                            </div>
+                        <div class="contact-box">
+                            <h5>Location</h5>
+                            <p>Chicago, IL</p>
+                            </div>
 
                 </div>
             </div>

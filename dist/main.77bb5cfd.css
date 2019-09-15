@@ -207,8 +207,7 @@ table {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        height: 400px;
-        width: 800px; }
+        height: 400px; }
         .work .content-area .work-section .project-section .project-box:hover {
           -webkit-box-shadow: 0px 20px 60px 6px rgba(0, 0, 0, 0.15);
           -moz-box-shadow: 0px 20px 60px 6px rgba(0, 0, 0, 0.15);
@@ -222,9 +221,35 @@ table {
           right: 0;
           left: 0;
           opacity: 0;
-          transition: all .3s ease-in-out; }
+          transition: all 0.3s ease-in-out;
+          overflow: hidden; }
           .work .content-area .work-section .project-section .project-box .grey-bg:hover {
-            opacity: 0.65; }
+            opacity: 0.85; }
+            .work .content-area .work-section .project-section .project-box .grey-bg:hover .project-info .project-details {
+              transform: translate3d(0, 0, 0); }
+          .work .content-area .work-section .project-section .project-box .grey-bg .project-info {
+            padding: 56px;
+            position: absolute;
+            width: 100%;
+            bottom: 0; }
+            .work .content-area .work-section .project-section .project-box .grey-bg .project-info .project-details {
+              position: relative;
+              font-size: 1.1rem;
+              text-transform: capitalize;
+              font-weight: 300;
+              margin: 0 0 1rem;
+              transform: translate3d(-200, 0, 0);
+              transition: transform 0.3s ease-in-out 0.2s; }
+            .work .content-area .work-section .project-section .project-box .grey-bg .project-info .project-title {
+              font-size: 1.8rem;
+              text-transform: uppercase;
+              font-weight: 700;
+              transition: transform 0.3s ease-in-out 0.2s; }
+            .work .content-area .work-section .project-section .project-box .grey-bg .project-info .fa-long-arrow-right {
+              position: absolute;
+              bottom: 56px;
+              right: 56px;
+              font-size: 3rem; }
         .work .content-area .work-section .project-section .project-box h5 {
           font-weight: 500;
           text-transform: uppercase;
@@ -234,6 +259,55 @@ table {
           font-weight: 300;
           font-size: 1rem;
           margin-bottom: 1rem; }
+
+.home .info-section {
+  width: 35%;
+  padding: 54px; }
+
+.home .content-area {
+  margin-left: 35%;
+  width: 65%;
+  background: white;
+  height: 100%; }
+  .home .content-area .img-container {
+    width: 30%;
+    display: inline-block;
+    position: relative;
+    height: 100%; }
+    .home .content-area .img-container .user-img {
+      position: absolute;
+      top: 56px;
+      left: -250px;
+      width: 500px;
+      height: calc(100% - 112px);
+      background: url(/willyb.5dcc1d64.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -webkit-box-shadow: 9px 20px 74px 6px rgba(180, 180, 180, 0.34);
+      -moz-box-shadow: 9px 20px 74px 6px rgba(180, 180, 180, 0.34);
+      box-shadow: 9px 20px 74px 6px rgba(180, 180, 180, 0.34); }
+  .home .content-area .profile-section {
+    vertical-align: top;
+    display: inline-block;
+    padding: 20% 0 0 0;
+    max-width: 500px; }
+    .home .content-area .profile-section .profile h1 {
+      font-size: 2.3rem;
+      font-weight: 500;
+      line-height: 1.2;
+      margin: 0 0 1rem 0; }
+      .home .content-area .profile-section .profile h1 span {
+        color: #41FF74; }
+    .home .content-area .profile-section .profile h5 {
+      font-size: 1.1rem;
+      margin: 0 0 2rem; }
+    .home .content-area .profile-section .profile p {
+      color: #202020;
+      font-weight: 300;
+      line-height: 1.4;
+      margin: 0 0 2rem; }
 
 * {
   box-sizing: border-box; }
